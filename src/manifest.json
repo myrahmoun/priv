@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Tracker Lens",
+  "version": "0.1.0",
+  "description": "Shows what websites tell tracking companies about you. Observes only; never blocks.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "tracker-lens@example.org",
+      "strict_min_version": "142.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+  "permissions": [
+    "<all_urls>",
+    "tabs",
+    "webRequest"
+  ],
+  "background": {
+    "scripts": ["background/main.js"],
+    "type": "module"
+  },
+  "browser_action": {
+    "default_title": "Tracker Lens"
+  }
+}

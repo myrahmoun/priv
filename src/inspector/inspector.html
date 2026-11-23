@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tracker Lens: Inspector</title>
+  <link rel="stylesheet" href="inspector.css">
+</head>
+<body>
+  <header>
+    <select id="tab"></select>
+    <span id="filters"></span>
+    <input id="search" type="search" placeholder="Search URLs, bodies, cookies">
+    <label><input id="pause" type="checkbox"> Pause</label>
+    <button id="clear">Clear</button>
+    <button id="export">Export JSON</button>
+  </header>
+  <div id="summary"></div>
+  <main id="list"></main>
+  <script type="module" src="inspector.js"></script>
+</body>
+</html>
